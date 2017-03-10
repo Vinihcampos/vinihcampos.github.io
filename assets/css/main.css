@@ -84,7 +84,7 @@ a:after {
 	right: 0;
 	z-index: 10000;
 	overflow: visible;
-	font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #section-topbar a {
@@ -123,27 +123,30 @@ a:after {
 
 
 #section-topbar ul#nav a {
-  display: block;
-  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
+  	display: block;
+  	font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	text-decoration: none;
+  	padding: 12px;
+  	border-left: 1px solid #222;
+  	background: #111;
 }
 
-	#section-topbar ul#nav a:hover {
-	  background: #222;
-	  text-decoration: none;
-	  border-left: 1px solid #111;
-	}
+#section-topbar ul#nav a:hover {
+	background: #222;
+	text-decoration: none;
+	border-left: 1px solid #111;
+}
 
-	#section-topbar ul#nav .active a {
-		background: #44bbaa;
-		border-left: 1px solid #111;
-	}
+#section-topbar ul#nav .active a {
+	background: #44bbaa;
+	border-left: 1px solid #111;
+}
 
-		#section-topbar ul#nav .active a:hover {
-			background: #44bbaa;
-		}
+#section-topbar ul#nav .active a:hover {
+	background: #44bbaa;
+}
+
+
 #section-topbar i {
 	font-size: 25px;
 }
@@ -153,13 +156,13 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
-	margin-top: 60px;
-	padding-top:140px;
+	background: url(../img/header-bg3.jpg) no-repeat center top;
+	margin-top: 50px;
+	padding-top:100px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 500px;
+	min-height: 600px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -181,6 +184,12 @@ a:after {
 #headerwrap h3 {
 	font-size: 25px;
 	color: white;
+}
+
+#headerwrap img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
 }
 
 /* Intnro Wrap */
@@ -213,6 +222,19 @@ a:after {
 
 #skillswrap h5, p {
 	color: white;
+}
+
+#skillswrap canvas{
+	background: transparent;
+}
+
+#skillswrap i{
+	color: #FFF;
+	font-size: 50px;
+	bottom: 0;
+  	left: 0;
+  	position: absolute;
+  	width: 100%;
 }
 
 #footwrap {

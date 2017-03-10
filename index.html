@@ -16,7 +16,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
     
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
@@ -61,6 +61,7 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
+					<img src="assets/img/profile_2.jpg"/>
 					<h1>Vinícius Campos T. Ribeiro</h1>
 					<h3>Researcher & Developer</h3>
 				</div><!--/.col-lg-12 -->
@@ -168,7 +169,7 @@
 					<p><t>Development of License Plate Recognition System</t><br/>
 						Digital Metropolis Institute (IMD) - UFRN. <br/>
 					</p>
-					<p><more>This project is one of the many projects from Smart Metropolis Project, that is conducted by the Metropole Digital Institute (IMD) of the Federal University of Rio Grande do Norte (UFRN), in Natal-RN, Brazil, seeks for playing an important role in the deployment of human and smart cities, bringing together researchers and practitioners with both theoretical and practical expertise in fields such as Computer Science, Engineering, and Social Sciences.</more></p>
+					<p><more>This project is one of the many projects from Smart Metropolis Project, that is conducted by the Metropole Digital Institute (IMD) from UFRN, in Natal-RN, Brazil, seeks for playing an important role in the deployment of human and smart cities, bringing together researchers and practitioners with both theoretical and practical expertise in fields such as Computer Science, Engineering, and Social Sciences.</more></p>
 
 					<p><more>In this project is developed a automatic license plates detection system, which will be used in various applications such as detecting stolen vehicles, parking lot and several other situations.</more></p>
 				</div>
@@ -195,33 +196,42 @@
 
 
 	<!--AWARDS DESCRIPTION -->
-	<!--<div class="container desc">
+	<div class="container desc">
 		<div class="row">
 				<div class="col-lg-2 col-lg-offset-1">
 					<h5>AWARDS</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><t>Best Web Design</t><br/>
-						Black Tie Site <br/>
-					</p>
+					<p><t>2º Place on Rio Info Cup of Algorithms</t></p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>NOVEMBER 2013</sm></p>
+					<p><sm>2014</sm></p>
 				</div>
 	
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Designer of the Year</t><br/>
-						Awwwards Site
-					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+					<p><t>Highlight of Incentive to Scientific Research, ABRITEC</t></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>2014</sm></p>
+				</div>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Honorable Mention on 9º Brazilian Olympiad of Mathematics of the Public Schools</t></p>
 				</div>
 				<div class="col-lg-3">
 					<p><sm>2013</sm></p>
 				</div>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Honorable Mention on 8º Brazilian Olympiad of Mathematics of the Public Schools</t></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>2012</sm></p>
+				</div>
 		
 		</div>
 		<br>
-	</div>--><!--/.container -->
+	</div><!--/.container -->
 	
 	
 	<!--SKILLS DESCRIPTION -->
@@ -229,11 +239,11 @@
 		<div class="container">
 			<div class="row">
 					<div class="col-lg-2 col-lg-offset-1">
-						<h5>SKILLS</h5>
+						<h5>DEVELOPMENT SKILLS</h5>
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="javascript" height="130" width="130"></canvas>
-						<p>Javascript</p>
+							
 						<br>
 						<script>
 							var doughnutData = [
@@ -247,29 +257,34 @@
 									}
 								];
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+
 						</script>
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
-						<p>Bootstrap</p>
+						<p class="text-center">Bootstrap</p>
 						<br>
 						<script>
 							var doughnutData = [
-									{
-										value: 90,
-										color:"#1abc9c"
-									},
-									{
-										value : 10,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+								{
+									value: 90,
+									color:"#1abc9c"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+							var canvas = document.getElementById("bootstrap");
+							var ctx = canvas.getContext("2d");
+							ctx.font = "30px Arial";
+							ctx.fillText("Hello World",65,65);
 						</script>
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="wordpress" height="130" width="130"></canvas>
-						<p>Wordpress</p>
+						<p class="text-center">Wordpress</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -282,13 +297,13 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+							var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
 					
 					<div class="col-lg-3 col-lg-offset-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
+						<p class="text-center">HTML/CSS</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -306,7 +321,7 @@
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="photoshop" height="130" width="130"></canvas>
-						<p>Photoshop</p>
+						<p class="text-center">Photoshop</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -324,7 +339,7 @@
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="illustrator" height="130" width="130"></canvas>
-						<p>Illustrator</p>
+						<p class="text-center">Illustrator</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -412,8 +427,8 @@
 					<p>
 						<a href="http://fb.com/vinihcampos" target="_blank"><i class="icon-facebook"></i></a>
 						<a href="https://www.linkedin.com/in/vin%C3%ADcius-campos-6a2271b1/" target="_blank"><i class="icon-linkedin"></i></a>
-						<a href="https://github.com/Vinihcampos"><i class="icon-github"></i></a>
-						<a href="http://lattes.cnpq.br/4806707968253342"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+						<a href="https://github.com/Vinihcampos" target="_blank"><i class="icon-github"></i></a>
+						<a href="http://lattes.cnpq.br/4806707968253342" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
 
 					</p>
 				</div>
